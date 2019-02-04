@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExchangeActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/background">
+
+        <TextView
+            android:layout_marginTop="20sp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/whoIsIn"
+            android:fontFamily="@font/my_new_font"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:background="@color/background"/>
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logout_image"
+            android:background="@color/background"
+            android:layout_marginVertical="10dp"
+            android:onClick="btnLogOut"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="From"
+            android:layout_gravity="center"
+            android:fontFamily="@font/my_new_font"
+            android:textColor="@color/black"
+            android:textSize="35sp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginRight="10dp"/>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerFrom"
+            android:layout_gravity="center">
+        </Spinner>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To"
+            android:fontFamily="@font/my_new_font"
+            android:textColor="@color/black"
+            android:textSize="35sp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginRight="15dp"/>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerTo">
+        </Spinner>
+
+    </LinearLayout>
+
+
+
+    <EditText
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Amount"
+        android:inputType="numberDecimal"
+        android:id="@+id/txtAmount"
+        android:fontFamily="@font/my_new_font"
+        android:gravity="center"
+        android:textSize="30sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/warning"
+        android:id="@+id/errorsMsg"
+        android:fontFamily="@font/info_bold"/>
+
+    <ImageButton
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/change_money_button"
+        android:background="@color/white"
+        android:layout_marginBottom="100dp"
+        android:id="@+id/changeBtn"
+        android:onClick="btnHttpRequest"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity=""
+        android:orientation="vertical"
+        android:background="@color/background">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:id="@+id/ResultAmount"
+            android:layout_marginTop="10dp"
+            android:inputType="numberDecimal"
+            android:fontFamily="@font/my_new_font"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/info_bold"
+            android:textColor="@color/black"
+            android:id="@+id/ResultCurrency"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"/>
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

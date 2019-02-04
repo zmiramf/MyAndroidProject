@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Sign up"
+        android:fontFamily="@font/info_bold"
+        android:textSize="45sp"
+        android:textColor="@color/black"
+        android:layout_marginHorizontal="40dp"/>
+    <EditText
+        android:layout_width="300dp"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"
+        android:hint=" Username"
+        android:background="@drawable/edit_text_design"
+        android:gravity="center"
+        android:textSize="35sp"
+        android:layout_marginLeft="50dp"
+        android:textColorHint="@color/black"
+        android:id="@+id/txtUserName"
+        android:fontFamily="@font/my_new_font"
+        android:layout_marginHorizontal="40dp"/>
+    <EditText
+        android:layout_width="300dp"
+        android:inputType="textPassword"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:textColorHint="@color/black"
+        android:textSize="35sp"
+        android:background="@drawable/edit_text_design"
+        android:gravity="center"
+        android:layout_marginLeft="50dp"
+        android:id="@+id/txtPassword"
+        android:fontFamily="@font/my_new_font"
+        android:layout_marginHorizontal="40dp" />
+    <EditText
+        android:layout_width="300dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="50dp"
+        android:hint="Confirm Password"
+        android:textColorHint="@color/black"
+        android:textSize="29sp"
+        android:fontFamily="@font/my_new_font"
+        android:background="@drawable/edit_text_design"
+        android:gravity="center"
+        android:inputType="textPassword"
+        android:layout_marginLeft="50dp"
+        android:id="@+id/txtConfirmPassword"
+        android:layout_marginHorizontal="40dp"/>
+
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:layout_height="wrap_content"
+        android:src="@drawable/login_backgroung_button"
+        android:id="@+id/btnRealSignup"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/warning"
+        android:id="@+id/errorsMsg"
+        android:fontFamily="@font/info_bold"/>
+
+</LinearLayout>

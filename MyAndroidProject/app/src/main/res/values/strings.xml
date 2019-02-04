@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MyAndroidProject</string>
+    <string-array name="currencies">
+        <item>Dollar</item>
+        <item>Israeli shekel</item>
+        <item>Euro</item>
+        <item>Pound Sterling</item>
+        <item>Canadian dollar</item>
+        <item>Thai baht</item>
+        <item>Japanese Yen</item>
+        <item>Russian Ruble</item>
+    </string-array>
+</resources>
